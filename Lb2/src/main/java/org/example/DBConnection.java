@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,8 +6,8 @@ import java.sql.SQLException;
 
 public class DBConnection {
     static final String URL = "jdbc:postgresql://localhost:5432/librarydb";
-    static final String USER = "postgres";
-    static final String PASSWORD = "123";
+    static final String USER = "DB_USER";
+    static final String PASSWORD = "DB_PASSWORD";
 
     public static Connection getConnection() {
         Connection conn = null;
